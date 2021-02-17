@@ -1,10 +1,7 @@
 function Test {
 
-    if ($PSDebugContext -ne $null) {
-        $date = Get-Date
-        Write-Host 'In Debug Mode'
-        
-    }
+    $date = Get-Date
+    
     $here = $PSScriptRoot
     $PSDebugContext
     dir -Path c:\
